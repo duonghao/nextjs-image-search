@@ -1,4 +1,4 @@
-import { Header, Footer, CategoryFilter } from "@/components";
+import { Header, Footer, CategoryFilter, DragDropFile } from "@/components";
 import { storefront } from "@/utils";
 
 export default async function Home(props) {
@@ -10,6 +10,7 @@ export default async function Home(props) {
       <h1>{props.hi}</h1>
       <Header></Header>
       <main>
+        <DragDropFile></DragDropFile>
         <CategoryFilter data={data}></CategoryFilter>
       </main>
       <Footer></Footer>
